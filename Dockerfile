@@ -11,6 +11,6 @@ ENV LANG=en_US.UTF-8
 
 # set a custom timezone
 # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-ENV TZ=Etc/UTC
+ENV TZ=Asia/Tokyo
 
 WORKDIR /app
