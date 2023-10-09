@@ -4,6 +4,8 @@ RUN apt-get update \
     && apt-get install -y locales tmux curl \
         # set language
         # https://www.ibm.com/docs/en/aix/7.2?topic=globalization-supported-languages-locales
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
     && locale-gen en_US.UTF-8 \
     && localedef -f UTF-8 -i en_US en_US
 
